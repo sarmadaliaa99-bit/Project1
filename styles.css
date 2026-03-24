@@ -1,0 +1,100 @@
+:root {
+  --bg: #fff9f1;
+  --text: #2d1f16;
+  --accent: #e6812d;
+  --accent-dark: #b85d18;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  background: linear-gradient(120deg, #ffd59f, #ffc07a);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 0.75rem 0 1.25rem;
+  font-size: 1.1rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cta:hover {
+  background: var(--accent-dark);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.menu-section h2,
+.about h2 {
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card span {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--accent-dark);
+}
+
+.about {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2d1f16;
+  color: #fff;
+}
